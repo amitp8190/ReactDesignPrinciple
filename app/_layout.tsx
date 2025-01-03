@@ -5,7 +5,7 @@ import React, { useEffect } from 'react';
 import 'react-native-reanimated';
 
 import { View } from '@/components/Themed';
-import FlowsView from './src/controlledUncontrolled/flowIndex'
+import HOCView from './src/hoc/index'
 export {
   // Catch any errors thrown by the Layout component.
   ErrorBoundary,
@@ -45,6 +45,6 @@ export default function RootLayout() {
 
 function RootLayoutNav() {
   return (
-    <View><FlowsView/></View>
+    <View><HOCView/></View>
   );
 }
